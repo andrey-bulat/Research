@@ -1,0 +1,48 @@
+<div *ngIf="employee$ | async as employee">
+  <div *ngIf="employee.employeeId > 0">
+    <h2>{{ employee.firstName + ' ' + employee.lastName | uppercase }} </h2>
+    <div class="row" style="width: 600px;">
+      <div class="col-sm-9">
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">First Name</div>
+          <div class="col">{{employee.firstName}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Second Name</div>
+          <div class="col">{{employee.secondName}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Last Name</div>
+          <div class="col">{{employee.lastName}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Birthday</div>
+          <div class="col">{{employee.birthday | date}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Mobile Phone</div>
+          <div class="col">{{employee.mobilePhone}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Work Phone</div>
+          <div class="col">{{employee.workPhone}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Position</div>
+          <div class="col">{{employee.position}}</div>
+        </div>
+        <div class="row">
+          <div style="text-align: right; padding-right: 10px;" class="col">Department</div>
+          <div class="col">{{employee.department}}</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img style="width: 150px;height: 200px;" src='{{webApiUrl}}/Photo/{{employee.employeeId}}' />
+      </div>
+    </div>
+    <div class="row" style="width: 600px; border-top: solid 1px;padding-top: 10px;padding-bottom: 10px;">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">{{employee.resume}}</div>
+    </div>
+  </div>
+</div>

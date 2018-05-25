@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Staff.Model", "Staff.Model\Staff.Model.csproj", "{744ED21E-71D7-44BD-BF44-B4BA202FC12F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Staff.Infrastructure", "Staff.Infrastructure\Staff.Infrastructure.csproj", "{9ED8FA14-1186-4AFD-B099-6D4324E243BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDbContext", "TestDbContext\TestDbContext.csproj", "{7DD1DC1A-2EBA-4657-BB10-D4C34DCFE293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffWebApi", "StaffWebApi\StaffWebApi.csproj", "{05A1D04C-0EEA-4B1D-AF72-150FE42777ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{744ED21E-71D7-44BD-BF44-B4BA202FC12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744ED21E-71D7-44BD-BF44-B4BA202FC12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744ED21E-71D7-44BD-BF44-B4BA202FC12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744ED21E-71D7-44BD-BF44-B4BA202FC12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED8FA14-1186-4AFD-B099-6D4324E243BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED8FA14-1186-4AFD-B099-6D4324E243BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED8FA14-1186-4AFD-B099-6D4324E243BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED8FA14-1186-4AFD-B099-6D4324E243BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD1DC1A-2EBA-4657-BB10-D4C34DCFE293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD1DC1A-2EBA-4657-BB10-D4C34DCFE293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD1DC1A-2EBA-4657-BB10-D4C34DCFE293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD1DC1A-2EBA-4657-BB10-D4C34DCFE293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A1D04C-0EEA-4B1D-AF72-150FE42777ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A1D04C-0EEA-4B1D-AF72-150FE42777ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A1D04C-0EEA-4B1D-AF72-150FE42777ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A1D04C-0EEA-4B1D-AF72-150FE42777ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50684100-1D1A-4040-998E-CDA52ADB9CA6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bulat.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Staff.Model\\Staff.Model.csproj
+		SccProjectName1 = Staff.Model
+		SccLocalPath1 = Staff.Model
+		SccProjectUniqueName2 = Staff.Infrastructure\\Staff.Infrastructure.csproj
+		SccProjectName2 = Staff.Infrastructure
+		SccLocalPath2 = Staff.Infrastructure
+		SccProjectUniqueName3 = TestDbContext\\TestDbContext.csproj
+		SccProjectName3 = TestDbContext
+		SccLocalPath3 = TestDbContext
+		SccProjectUniqueName4 = StaffWebApi\\StaffWebApi.csproj
+		SccProjectName4 = StaffWebApi
+		SccLocalPath4 = StaffWebApi
+	EndGlobalSection
+EndGlobal

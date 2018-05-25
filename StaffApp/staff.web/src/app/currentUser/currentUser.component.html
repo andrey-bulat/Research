@@ -1,0 +1,7 @@
+<span *ngIf="user">
+      <span style="padding-right: 10px;">
+        <span> {{user.displayName}}</span>
+      </span>
+      <button class="btn btn-warning" (click)="logOut()">Logout</button>
+</span>
+<span *ngIf="!user"><a routerLink="/login">Login</a></span>

@@ -1,0 +1,30 @@
+<div *ngIf="page$ | async as page">
+
+  <h2>Emploees</h2>
+  <h3>Page {{page.pageNum + 1}} of
+    <span *ngFor="let n of getPagesNum(page.pagesCount)">
+      <a style="padding:10px;" routerLink="/staff/{{n}}/10">{{n+1}}</a>
+    </span>
+  </h3>
+
+  <div *ngIf="page.staffItems" class="heroes" class="d-flex flex-wrap">
+    <div *ngFor="let person of page.staffItems">
+      <div  style="padding:10px;margin: 5px;border:solid 1px;width:400px;">
+        <div class="row">
+          <span class="col-sm-1 ">{{person.employeeId}}</span>
+          <span class="col-sm-8">
+            <span>{{person.firstName}}&nbsp;{{person.lastName}}</span>
+            <br/>
+            <span>{{person.position}}&nbsp;, {{person.department}}</span>
+            <br/>
+            <a style="padding-top: 5px;" routerLink="/detail/{{person.employeeId}}">Details</a>
+          </span>
+          <span class="col-sm-2">
+            <img style="width: 60px;height: 80px" src='{{webApiUrl}}/Photo/{{person.employeeId}}' />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
